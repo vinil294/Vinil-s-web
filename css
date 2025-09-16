@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+.backimage {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8d617e19-3c3c-4c28-8998-c9b14dbc7200/web/IN-en-20250901-TRIFECTA-perspective_48d84d4e-9558-46b8-a0f3-8b2dc8478431_large.jpg");
+    /* opacity: 40%; */
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.downdiv {
+    display: flex;
+    margin: 15px;
+    border-radius: 10px;
+    /* height:370px;  */
+    display: flex;
+    overflow: auto;
+}
+
+.downpic {
+    border-radius: 10px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.downpic:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.netflixcard {
+    position: relative;
+    z-index: 2;
+    width: 90vw;
+    height: 100px;
+    display: flex;
+}
+
+.netflixdiv {
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.netfliximg {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.box {
+    height: 734px;
+    width: 100vw;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: rgb(8, 8, 8);
+}
+
+.selectbutton {
+    background-color: rgba(225, 18, 18, 0.089);
+    border-radius: 3px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 130px;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid rgb(76, 74, 74);
+    position: relative;
+    z-index: 10;
+}
+
+.enterbutton {
+
+    background-color: rgb(225, 18, 18);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.tend {
+    color: white;
+    margin-top: 50px;
+    margin-left: 110px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width:599px) {
+    .tend {
+        margin-left: 50px;
+    }
+
+}
+
+.contentinbackhead {
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.para {
+    color: rgb(247, 245, 245);
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: px;
+    display: flex;
+    justify-content: center;
+}
+
+.middlediv {
+    height: 90vh;
+    align-content: center;
+    position: relative;
+}
+
+.p2 {
+    color: white;
+    margin-top: 27px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+input {
+    border: solid balck;
+    margin-top: 7px;
+    background-color: rgba(180, 176, 176, 0);
+    width: 30%;
+    height: 50px;
+    border-radius: 6px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+    color: grey;
+}
+
+.input:hover {
+    transform: scale(1.1);
+}
+
+.emailandbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.buttoninbacimg {
+    margin-top: 7px;
+    background-color: rgb(252, 38, 38);
+    border-radius: 6px;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    height: 55px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.buttoninbacimg:hover {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    background-color: rgb(179, 54, 54);
+}
+
+.join {
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bold;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.question {
+    color: white;
+    margin-left: 150px;
+    padding-top: 50px;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+}
+
+@media screen and (max-width:599px) {
+    .question {
+
+        margin-left: 50px;
+        transition-duration: 2s;
+    }
+}
+
+.downcard {
+    display: grid;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 585px) {
+    .downcard {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .downcard {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+
+
+.card {
+    height: 300px;
+    width: 300px;
+    transition: all 1s ease-out;
+    background: linear-gradient(to bottom, #1a0440, #0c1445);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+@media screen and (max-width:1191px) {
+    .card {
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        margin-top: 15px;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:601px) {
+    .card {
+        height: 200px;
+        width: 500px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 15px;
+        transition: all 1s ease-out;
+
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+ transform: scale(1.1);
+
+}
+
+.svg {
+    display: flex;
+    /* margin-left: 180px; */
+    margin-top: 40px;
+    position: sticky;
+}
+
+@media screen and (max-width:585px) {
+    .svg {
+        display: flex;
+        /* margin-left: 370px; */
+        margin-top: 2px;
+        position: relative;
+    }
+}
+
+
+.headincard {
+    color: rgb(245, 246, 246);
+    padding: 10px;
+    color: rgb(247, 245, 245);
+    font-size: 22px;
+    display: grid;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.paraincard {
+    color: rgb(170, 172, 172);
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imageincard {
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:584px) {
+    .imagecard {
+        margin-left: 350px;
+    }
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 75vw;
+    margin: 7px auto;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width:599px) {
+    .faqbox {
+        transition: all 1s ease-out;
+        font-size: 15px;
+        padding: 15px;
+        max-width: 55vw;
+    }
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq1 {
+    color: white;
+    margin-top: 50px;
+    margin-left: 110px;
+    font-size: 30px;
+    font-weight: bold;
+    /* justify-content: flex-start; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width:599px) {
+    .faq1 {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+}
+
+
+.faqcard {
+    display: grid;
+}
+
+
+.enterbutton:hover {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    background-color: rgb(179, 54, 54);
+}
+
+footer {
+    color: rgb(244, 242, 242);
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0px;
+
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 959px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-left: 30px;
+        transition-duration: 2s;
+        justify-content: center;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+@media screen and (max-width:599px) {
+    .sign {
+        margin-left: 20px;
+        transition-duration: 2s;
+    }
+}
+
+
+.span1 {
+    color: white;
+    margin-left: 140px;
+    padding: 10px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height: 200px;
+    display: grid;
+}
+
+@media screen and (max-width:599px) {
+    .span1 {
+        margin-left: 20px;
+        justify-content: start;
+    }
+}
